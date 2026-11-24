@@ -41,7 +41,7 @@ if(modal){
     if(!modal.classList.contains("open"))return;
     const title=modal.querySelector(".mh,.modal-title,h2,h3");
     if(!title||!title.textContent.trim().toLowerCase().includes("settings"))return;
-    const content=modal.querySelector(".mb,.modal-body,.modal-content")||modal;
+    const content=modal.querySelector("#modalCard")||modal;
     if(content.querySelector("#cya-jp-toggle"))return;
     const row=document.createElement("div");
     row.className="field";
